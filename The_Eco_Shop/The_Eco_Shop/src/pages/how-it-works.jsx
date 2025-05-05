@@ -3,33 +3,36 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { Container, Box, Card, CardContent, Typography } from '@mui/material';
 
-
 const HowItWorks = () => {
-    return (
-        <>
-            <Navbar onMenuClick={() => setOpen(true)} />
-                <Box>
-                        <Card sx={{ mb: .5 }}>
-                          <CardContent>
-                            <Typography variant="h5">Welcome to The Eco Shop </Typography>
-                            <Typography variant="body1">Free deliveries over €100</Typography>
-                            <Typography variant="body2">Becoming more eco-conscious is simple when you choose the right products.</Typography>
-                          </CardContent>
-                        </Card>
-                      </Box>
-        <Container sx={{ mt: 6, mb: 6 }}>
-            <Typography variant="h3" gutterBottom>
-            How It Works
+  return (
+    <>
+      <Navbar />
+
+      <Box>
+        <Card sx={{ mb: 0.5 }}>
+          <CardContent>
+            <Typography variant="h5">Welcome to The Eco Shop</Typography>
+            <Typography variant="body1">Free deliveries over €100</Typography>
+            <Typography variant="body2">
+              Becoming more eco-conscious is simple when you choose the right products.
             </Typography>
-            
-                <ol>
-                <li>Browse sustainable products from trusted vendors.</li>
-                <li>Add your favorite items to your cart.</li>
-                <li>Checkout securely and enjoy eco-friendly shopping!</li>
-                </ol>
+          </CardContent>
+        </Card>
+      </Box>
+
+      <Container sx={{ mt: 6, mb: 6 }}>
+        <Typography variant="h3" gutterBottom>
+          How It Works
+        </Typography>
+
+        <ol>
+          <li>Browse sustainable products from trusted vendors.</li>
+          <li>Add your favorite items to your cart.</li>
+          <li>Checkout securely and enjoy eco-friendly shopping!</li>
+        </ol>
       </Container>
 
-      <Box sx={{ textAlign: 'center'}}>
+      <Box sx={{ textAlign: 'center' }}>
         <Card sx={{ backgroundColor: 'rgb(230, 243, 239)' }}>
           <CardContent>
             <Typography variant="h6" gutterBottom>
@@ -46,9 +49,9 @@ const HowItWorks = () => {
         </Card>
       </Box>
 
-        <Footer />
-        </>
-    );
+      <Footer />
+    </>
+  );
 };
 
 export default HowItWorks;

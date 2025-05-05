@@ -39,7 +39,7 @@ const MotionCard = motion(Card);
 const MotionBox = motion(Box);
 
 const CategoryBanner = () => {
-  const [open, setOpen] = useState(false);
+  const [, setOpen] = useState(false);
   
   return (
     <>
