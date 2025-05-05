@@ -55,7 +55,7 @@ const CategoryBanner = () => {
 
           <Box sx={{ textAlign: 'center', mb: 3 }}>
             <video width="90%" height="auto" controls autoPlay muted>
-              <source src="/EcoShop1.mp4" type="video/mp4" />
+              <source src="/" type="video/mp4" />
             </video>
           </Box>
         </Card> 
