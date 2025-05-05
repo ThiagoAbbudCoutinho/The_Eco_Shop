@@ -12,6 +12,16 @@ function App() {
   return (
     <>
       <Routes>
+      <video
+  width="100%"
+  height="auto"
+  controls
+  style={{ marginTop: '20px', marginBottom: '20px', borderRadius: '10px' }}
+>
+  <source src="/myvideo.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
         <Route path="/login" element={<Login />} />
         <Route path="/home" element={<Home />} />
         <Route path="/" element={isLoggedIn ? <Navigate to="/Home" /> : <Login />}/>
@@ -26,3 +36,5 @@ function App() {
 }
 
 export default App
+
+
